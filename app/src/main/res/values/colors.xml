@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="reveal_color">#1b000000</color>
+    <color name="light_green">#0ac39e</color>
+
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+
+    <color name="found_text_color">#353535</color>
+    <color name="found_description_color">#aaaaaa</color>
+    <color name="found_divide_color">#d9d9d9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="light_blue">#ADD8E6</color>
+
+    <color name="text_light_gray">#989898</color>
+    <color name="text_light_blue">#2d7ac1</color>
+    <color name="main_color">#0ac39e</color>
+    
+</resources>
