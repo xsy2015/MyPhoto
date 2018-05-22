@@ -92,4 +92,40 @@ public class CommonUtil {
             return false;
         }
     }
+
+    /**
+     * MD5 加密
+     */
+    public static String toMD5(String data) {
+
+        try {
+            // 实例化一个指定摘要算法为MD5的MessageDigest对象
+            MessageDigest md5 = MessageDigest.getInstance("MD5");
+            // 重置摘要以供再次使用
+            md5.reset();
+            // 使用bytes更新摘要
+            md5.update(data.getBytes());
+            // 使用指定的byte数组对摘要进行最的更新，然后完成摘要计算
+            return toHexString(md5.digest());
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
+        return "";
+    }
+    // 将字符串中的每个字符转换为十六进制
+    private static String toHexString(byte[] bytes) {
+
+        StringBuilder hexstring = new StringBuilder();
+        for (byte b : bytes) {
+            String hex = Integer.toHexString(0xFF & b);
+            if (hex.length() == 1) {
+                hexstring.append('0');
+            }
+            hexstring.append(hex);
+
+        }
+
+        return hexstring.toString();
+    }
+
 }

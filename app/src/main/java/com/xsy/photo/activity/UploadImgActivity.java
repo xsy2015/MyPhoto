@@ -22,6 +22,8 @@ import android.widget.Toast;
 
 import com.xsy.photo.R;
 import com.xsy.photo.adapter.ChoosePhotoListAdapter;
+import com.xsy.photo.album.PicPathEvent;
+import com.xsy.photo.album.PickOrTakeImageActivity;
 import com.xsy.photo.base.MyApplication;
 import com.xsy.photo.customview.ActionSheetDialog;
 
@@ -33,6 +35,9 @@ import com.xsy.photo.utils.MyUtils;
 import com.xsy.photo.utils.UILImageLoader;
 
 
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -51,20 +56,10 @@ import cn.finalteam.galleryfinal.model.PhotoInfo;
 public class UploadImgActivity extends Activity implements View.OnClickListener{
 
     private GridView gv;
-
-    private static final int TAKE_PICTURE = 0x000001;
+    public static final int MAX_IMG_NUM = 9;
     private List<String> imgUrls=new ArrayList<String>();
     private TextView tv_upload;
-    private List<String> mImgUrl;
-
-    private List<PhotoInfo> mPhotoList;
-    private final int REQUEST_CODE_CAMERA = 1000;
-    private final int REQUEST_CODE_GALLERY = 1001;
-    private final int REQUEST_CODE_CROP = 1002;
-    private final int REQUEST_CODE_EDIT = 1003;
     private ChoosePhotoListAdapter mChoosePhotoListAdapter;
-    private FunctionConfig mFunctionConfig;
-    private FunctionConfig.Builder mFunctionConfigBuilder;
     private int mImageWidth;
     private ImageView mIv_go_back;
 
@@ -72,8 +67,8 @@ public class UploadImgActivity extends Activity implements View.OnClickListener{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_upload_photo);
+        EventBus.getDefault().register(this);
         initView();
-
         initData();
     }
 
@@ -85,71 +80,31 @@ public class UploadImgActivity extends Activity implements View.OnClickListener{
     }
 
     private void initView() {
-        mPhotoList = new ArrayList<>();
+
         gv = (GridView) findViewById(R.id.gv);
         tv_upload = (TextView) findViewById(R.id.tv_upload);
         tv_upload.setOnClickListener(this);
         mIv_go_back = (ImageView) findViewById(R.id.iv_go_back);
         mIv_go_back.setOnClickListener(this);
 
-        mChoosePhotoListAdapter = new ChoosePhotoListAdapter(this, mPhotoList,this);
+        mChoosePhotoListAdapter = new ChoosePhotoListAdapter(this, imgUrls,this);
         gv.setAdapter(mChoosePhotoListAdapter);
     }
 
     private void showSheetDialog() {
-
-        mFunctionConfigBuilder = new FunctionConfig.Builder();
-        //设置主题
-        //ThemeConfig.CYAN
-        ThemeConfig theme = new ThemeConfig.Builder()
-                .setTitleBarBgColor(Color.rgb(10, 195, 158))
-                .setFabNornalColor(Color.rgb(0x4C, 0xAF, 0x50))
-                .setFabPressedColor(Color.rgb(0x38, 0x8E, 0x3C))
-                .setCheckSelectedColor(Color.rgb(0x4C, 0xAF, 0x50))
-                .setCropControlColor(Color.rgb(0x4C, 0xAF, 0x50))
-                .build();
-
-       // mFunctionConfigBuilder.setSelected(mPhotoList);//添加过滤集合
-        //配置功能
-        mFunctionConfig = mFunctionConfigBuilder
-                .setEnableCamera(true)
-                .setEnableEdit(true)
-                .setEnableCrop(true)
-                .setEnableRotate(true)
-                .setCropSquare(true)
-                .setEnablePreview(true)
-                .setRotateReplaceSource(true)
-                .setMutiSelectMaxSize(8)
-                .build();
-
-        //配置imageloader
-        ImageLoader imageloader = new UILImageLoader();
-
-        CoreConfig coreConfig = new CoreConfig.Builder(UploadImgActivity.this, imageloader,theme)
-                // .setDebug(BuildConfig.DEBUG)
-                .setFunctionConfig(mFunctionConfig)
-               // .setPauseOnScrollListener(pauseOnScrollListener)
-                //.setNoAnimcation(mCbNoAnimation.isChecked())
-                .build();
-        GalleryFinal.init(coreConfig);
-
-
-
         new ActionSheetDialog(this).builder()
                 .setCanceledOnTouchOutside(true)
                 .addSheetItem("拍照", ActionSheetDialog.SheetItemColor.DEFAULT,
                         new ActionSheetDialog.OnSheetItemClickListener() {
                             @Override
                             public void onClick(int which) {
-                                GalleryFinal.openCamera(REQUEST_CODE_CAMERA, mFunctionConfig, mOnHanlderResultCallback);
+
                             }
                         })
                 .addSheetItem("相册", ActionSheetDialog.SheetItemColor.DEFAULT,
                         new ActionSheetDialog.OnSheetItemClickListener() {
                             @Override
                             public void onClick(int which) {
-
-                                GalleryFinal.openGalleryMuti(REQUEST_CODE_GALLERY,mFunctionConfig, mOnHanlderResultCallback);
                             }
                         }).show();
     }
@@ -159,19 +114,15 @@ public class UploadImgActivity extends Activity implements View.OnClickListener{
         switch (view.getId()){
             case R.id.tv_upload:
             {
-
-//                for (int i = 0; i < mImgUrl.size(); i++) {
-//                    DataSupport.deleteAll(Photos.class, "imgUrl=?",mImgUrl.get(i));
-//                }
-
-
                 Toast.makeText(UploadImgActivity.this,"提交成功",Toast.LENGTH_LONG).show();
             }
                 break;
             case R.id.iv:
                 {
-                    //GalleryFinal.openGalleryMuti(REQUEST_CODE_GALLERY, MyApplication.getFunctionConfig(), mOnHanlderResultCallback);
-                    showSheetDialog();
+                    int surplus_pics =MAX_IMG_NUM - imgUrls.size();
+                    Intent intent = new Intent(this, PickOrTakeImageActivity.class);
+                    intent.putExtra("pic_max", surplus_pics);
+                    startActivityForResult(intent, 10086);
                 }
                 break;
             case R.id.iv_go_back:
@@ -184,39 +135,16 @@ public class UploadImgActivity extends Activity implements View.OnClickListener{
                 break;
         }
     }
-
-
-
-    private GalleryFinal.OnHanlderResultCallback mOnHanlderResultCallback = new GalleryFinal.OnHanlderResultCallback() {
-        @Override
-        public void onHanlderSuccess(int reqeustCode, List<PhotoInfo> resultList) {
-
-            if (resultList != null) {
-                mPhotoList.addAll(resultList);
-               // mPhotoList=removeDuplicate(mPhotoList);
-               mChoosePhotoListAdapter.notifyDataSetChanged();
-            }
-        }
-
-        @Override
-        public void onHanlderFailure(int requestCode, String errorMsg) {
-            Toast.makeText(UploadImgActivity.this, errorMsg, Toast.LENGTH_SHORT).show();
-        }
-    };
-
-    public   List  removeDuplicate(List<PhotoInfo> list)  {
-//        HashSet<PhotoInfo> h  =   new  HashSet<PhotoInfo>(list);
-//        list.clear();
-//        list.addAll(h);
-        for (int i = 0; i < list.size(); i++) {
-            for (int j = list.size()-1; j>i ; j--) {
-                if (list.get(i).equals(list.get(j))){
-                    list.remove(i);
-                }
-            }
-        }
-        System.out.println("List<PhotoInfo>="+list);
-        return list;
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void onEvent(PicPathEvent event) {
+        //imgUrls.clear();
+        imgUrls.addAll(event.getPathList());
+        mChoosePhotoListAdapter.notifyDataSetChanged();
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        EventBus.getDefault().unregister(this);
+    }
 }

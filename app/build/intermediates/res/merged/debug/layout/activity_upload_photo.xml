@@ -13,17 +13,18 @@
             android:layout_width="45dp"
             android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
-            android:src="@drawable/arrows_right"
-            android:scaleType="fitXY"/>
+            android:src="@drawable/back_02"
+            android:scaleType="center"
+            android:visibility="visible"
+            />
         <TextView
-
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_centerInParent="true"
             android:gravity="center"
             android:textColor="#FFFFFF"
             android:textSize="18sp"
-            android:text="上传照片"/>
+            android:text="选择照片"/>
         <TextView
             android:id="@+id/tv_upload"
             android:layout_width="45dp"

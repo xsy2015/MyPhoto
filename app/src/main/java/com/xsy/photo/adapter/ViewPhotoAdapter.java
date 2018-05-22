@@ -43,7 +43,7 @@ public class ViewPhotoAdapter extends PagerAdapter {
         ZoomImageView zoomImageView = (ZoomImageView) view.findViewById(R.id.zoom_image_view);
         BitmapCacheHelper.getInstance().addPathToShowlist(mData.get(position));
         zoomImageView.setTag(mData.get(position));
-        Bitmap bitmap = BitmapCacheHelper.getInstance().getBitmap(mData.get(position), 0, 0, new BitmapCacheHelper.ILoadImageCallback() {
+        Bitmap bitmap = BitmapCacheHelper.getInstance().getBitmap("file://"+mData.get(position), 0, 0, new BitmapCacheHelper.ILoadImageCallback() {
             @Override
             public void onLoadImageCallBack(Bitmap bitmap, String path, Object... objects) {
                 ZoomImageView view = ((ZoomImageView)mViewPager.findViewWithTag(path));

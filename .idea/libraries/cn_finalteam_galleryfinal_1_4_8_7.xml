@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="galleryfinal-1.4.8.7">
+  <library name="cn.finalteam:galleryfinal-1.4.8.7">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/cn.finalteam/galleryfinal/1.4.8.7/res" />
       <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/cn.finalteam/galleryfinal/1.4.8.7/jars/classes.jar!/" />

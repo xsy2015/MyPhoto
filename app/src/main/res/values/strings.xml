@@ -14,4 +14,11 @@
     <string name="choose_pic">选择</string>
     <string name="not_choose_any_pick">你还没有选择任何图片</string>
     <string name="uploading_images">正在批量上传</string>
+
+    <string name="finish">完成</string>
+    <string name="open_READ_EXTERNAL_STORAGE">请先允许程序访问储存空间</string>
+    <string name="open_CAMERA">请先允许程序打开照相机</string>
+    <string name="open_Location">请先允许程序打开定位服务</string>
+    <string name="choose">选择</string>
+    <string name="photo">手机</string>
 </resources>

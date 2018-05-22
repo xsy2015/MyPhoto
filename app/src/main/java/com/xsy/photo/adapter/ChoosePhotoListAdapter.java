@@ -37,19 +37,21 @@ import java.util.List;
 import cn.finalteam.galleryfinal.model.PhotoInfo;
 import cn.finalteam.toolsfinal.DeviceUtils;
 
+import static com.xsy.photo.activity.UploadImgActivity.MAX_IMG_NUM;
+
 /**
  * Desction:
  * Author:pengjianbo
  * Date:15/12/1 下午8:42
  */
 public class ChoosePhotoListAdapter extends BaseAdapter {
-    private List<PhotoInfo> mList;
+    private List<String> mImgList;
     private LayoutInflater mInflater;
     private int mScreenWidth;
     private View.OnClickListener mOnClickListener;
 
-    public ChoosePhotoListAdapter(Activity activity, List<PhotoInfo> list,View.OnClickListener onClickListener) {
-        this.mList = list;
+    public ChoosePhotoListAdapter(Activity activity, List<String> list,View.OnClickListener onClickListener) {
+        this.mImgList = list;
         this.mInflater = LayoutInflater.from(activity);
         this.mScreenWidth = DeviceUtils.getScreenPix(activity).widthPixels;
         this.mOnClickListener=onClickListener;
@@ -58,12 +60,12 @@ public class ChoosePhotoListAdapter extends BaseAdapter {
     @Override
     public int getCount() {
 
-            return mList.size()+1;
+            return mImgList.size()+1;
     }
 
     @Override
     public Object getItem(int position) {
-        return mList.get(position);
+        return mImgList.get(position);
     }
 
     @Override
@@ -89,7 +91,7 @@ public class ChoosePhotoListAdapter extends BaseAdapter {
         //setHeight(holder.mImageView);
 
      if (parent.getChildCount()==position){
-        if (position<mList.size()){
+        if (position<mImgList.size()){
             DisplayImageOptions options = new DisplayImageOptions.Builder()
                     .showImageOnFail(R.drawable.ic_gf_default_photo)
                     .showImageForEmptyUri(R.drawable.ic_gf_default_photo)
@@ -98,14 +100,14 @@ public class ChoosePhotoListAdapter extends BaseAdapter {
             holder.mImageView.setOnClickListener(null);
 
             // ImageView ivPhoto = (ImageView) mInflater.inflate(R.layout.item_grid_view, null);
-            PhotoInfo photoInfo = mList.get(position);
-            ImageLoader.getInstance().displayImage("file:/" + photoInfo.getPhotoPath(), holder.mImageView, options);
+
+            ImageLoader.getInstance().displayImage("file:/" +mImgList.get(position) , holder.mImageView, options);
             System.out.println("---------"+position+"-------");
         }else{
 
             holder.mImageView.setOnClickListener(mOnClickListener);
             holder.mImageView.setImageResource(R.drawable.icon_addpic_unfocused);
-            if (position==8){
+            if (position==MAX_IMG_NUM){
                 holder.mImageView.setVisibility(View.GONE);
             }
             System.out.println("**********" + position + "-------");
@@ -117,7 +119,7 @@ public class ChoosePhotoListAdapter extends BaseAdapter {
         }else {
             holder.mImageView.setOnClickListener(null);
         }*/
-        System.out.println("@@@@@@" + mList.size() + "@@@@@");
+        System.out.println("@@@@@@" + mImgList.size() + "@@@@@");
         return convertView;
     }
 

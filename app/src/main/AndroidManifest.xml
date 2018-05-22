@@ -26,7 +26,7 @@
         android:label="@string/app_name"
         android:theme="@android:style/Theme.Light.NoTitleBar" >
         <activity
-            android:name="com.xsy.photo.MainActivity"
+            android:name="com.xsy.photo.activity.UploadImgActivity"
             android:hardwareAccelerated="true"
             android:label="@string/app_name" >
             <intent-filter>
@@ -36,7 +36,11 @@
             </intent-filter>
         </activity>
        <activity android:name="com.xsy.photo.activity.ViewPhotosActivity"/>
-        <activity android:name=".activity.UploadImgActivity" android:launchMode="singleTask"/>
+
+        <activity android:name=".album.PickBigImagesActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".album.PickOrTakeImageActivity"
+                  android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

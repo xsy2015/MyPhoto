@@ -2,5 +2,9 @@
     {
         "merged": "F:\\GithubProject\\MyPhoto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v23\\abc_control_background_material.xml",
         "source": "F:\\GithubProject\\MyPhoto\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-v23\\abc_control_background_material.xml"
+    },
+    {
+        "merged": "F:\\AndroidOpenLibrary\\MyPhoto\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v23\\abc_control_background_material.xml",
+        "source": "F:\\AndroidOpenLibrary\\MyPhoto\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\drawable-v23\\abc_control_background_material.xml"
     }
 ]

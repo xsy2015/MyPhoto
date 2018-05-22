@@ -4,11 +4,15 @@ import java.io.Closeable;
 import java.io.IOException;
 import java.util.List;
 
+import android.Manifest;
+import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.ActivityManager.RunningAppProcessInfo;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.Build;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
 import android.view.WindowManager;
@@ -66,5 +70,31 @@ public class MyUtils {
     public static void executeInThread(Runnable runnable) {
         new Thread(runnable).start();
     }
-
+    public static boolean checkReadStoragePermissions(Context context, Activity activity) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            int permissionCheck = context.checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE);
+            if (PackageManager.PERMISSION_GRANTED == permissionCheck) {
+                return true;
+            } else {//if (permissionCheck == PackageManager.PERMISSION_DENIED) {
+                activity.requestPermissions(new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, MyConstants.SUCCESS_CODE);
+                return false;
+            }
+        } else {
+            return true;
+        }
+    }
+    //照相机
+    public static boolean checkTakePhotoPermissions(Context context, Activity activity) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            int permissionCheck = context.checkSelfPermission(Manifest.permission.CAMERA);
+            if (PackageManager.PERMISSION_GRANTED == permissionCheck) {
+                return true;
+            } else {//if (permissionCheck == PackageManager.PERMISSION_DENIED) {
+                activity.requestPermissions(new String[]{Manifest.permission.CAMERA}, 1001);
+                return false;
+            }
+        } else {
+            return true;
+        }
+    }
 }
