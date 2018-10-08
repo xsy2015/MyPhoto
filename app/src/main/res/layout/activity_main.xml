@@ -23,12 +23,12 @@
             android:id="@+id/tv_upload"
             android:layout_width="45dp"
             android:layout_height="match_parent"
-            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
             android:gravity="center"
-            android:text="上传"
+            android:text="相册"
             android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:visibility="gone"/>
+            android:textSize="18sp"
+            android:visibility="visible"/>
 
     </RelativeLayout>
 

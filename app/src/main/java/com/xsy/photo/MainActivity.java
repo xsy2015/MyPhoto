@@ -43,9 +43,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
     private void initView() {
         iv_go_back = (ImageView) findViewById(R.id.iv_go_back);
-        tv_upload = (TextView) findViewById(R.id.tv_upload);
         iv_go_back.setOnClickListener(this);
-        tv_upload.setOnClickListener(this);
 
         mRecyclerView = findViewById(R.id.mRecyclerView);
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 3);
@@ -81,13 +79,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
             case R.id.iv_go_back://返回
                 finish();
                 break;
-            case R.id.tv_upload://上传照片
-            {
-                Intent intent = new Intent(this, PickOrTakeImageActivity.class);
-                intent.putExtra("pic_max", MAXIMGNUMBER);
-                startActivity(intent);
-            }
-            break;
             default:
                 break;
         }
