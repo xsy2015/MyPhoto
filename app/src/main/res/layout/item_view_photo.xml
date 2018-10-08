@@ -3,15 +3,11 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
-    <com.xsy.photo.ui.ZoomImageView
-        android:id="@+id/zoom_image_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </com.xsy.photo.ui.ZoomImageView>
-    <!--<ImageView
-        android:id="@+id/zoom_image_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-    </ImageView>-->
+   <ImageView
+        android:id="@+id/zoom_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:scaleType="fitXY"/>
+
 </LinearLayout>

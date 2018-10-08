@@ -1,6 +1,23 @@
 -- Merging decision tree log ---
 manifest
 ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:2:1-46:12
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\a92df9b2c91af90863f02231444e41b0\AndroidManifest.xml:17:1-26:12
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\525a61ada8087b52b38906ee9ff56291\AndroidManifest.xml:17:1-31:12
+MERGED from [com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\BaseRecyclerViewAdapterHelper-2.9.30.aar\73ec0c3a8f1990e648a6e72410f1fac7\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\4418bd7c5832f10ed6958f64cd667503\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\1922ef2d92127aa52b2c8c94967b0741\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\6c85c995eebaef533e01590c9b3eadbc\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\bd1b0f3e3aa94c3d545ec538f920d68f\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\3d1c8ba6419b50cfd5cec420c02f4932\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\4e296a042914e4bb5246c1e99e565d2e\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\230d8b86a1bd1d5e1632bf70c68fd57b\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\469f0fd179742e92b17080ea4bc943f0\AndroidManifest.xml:17:1-31:12
+INJECTED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:2:1-46:12
 	package
 		ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:3:5-28
 		INJECTED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml
@@ -9,20 +26,42 @@ ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:2:1-46
 		ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:5:5-30
 		INJECTED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml
 		INJECTED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
 		ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:4:5-28
 		INJECTED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml
 		INJECTED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml
-	xmlns:android
-		ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:2:11-69
 uses-sdk
 ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:appcompat-v7:23.1.1] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-v4:23.1.1] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [cn.finalteam:galleryfinal:1.4.8.7] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\galleryfinal\1.4.8.7\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-v4:23.1.1] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
-MERGED from [cn.finalteam:toolsfinal:1.1.5] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\toolsfinal\1.1.5\AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:support-v4:23.1.1] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:20:5-43
+INJECTED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\a92df9b2c91af90863f02231444e41b0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\a92df9b2c91af90863f02231444e41b0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\525a61ada8087b52b38906ee9ff56291\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\525a61ada8087b52b38906ee9ff56291\AndroidManifest.xml:21:5-23:78
+MERGED from [com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\BaseRecyclerViewAdapterHelper-2.9.30.aar\73ec0c3a8f1990e648a6e72410f1fac7\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\BaseRecyclerViewAdapterHelper-2.9.30.aar\73ec0c3a8f1990e648a6e72410f1fac7\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\4418bd7c5832f10ed6958f64cd667503\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\4418bd7c5832f10ed6958f64cd667503\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\1922ef2d92127aa52b2c8c94967b0741\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\1922ef2d92127aa52b2c8c94967b0741\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\6c85c995eebaef533e01590c9b3eadbc\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\6c85c995eebaef533e01590c9b3eadbc\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\bd1b0f3e3aa94c3d545ec538f920d68f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\bd1b0f3e3aa94c3d545ec538f920d68f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\3d1c8ba6419b50cfd5cec420c02f4932\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\3d1c8ba6419b50cfd5cec420c02f4932\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\4e296a042914e4bb5246c1e99e565d2e\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\4e296a042914e4bb5246c1e99e565d2e\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\230d8b86a1bd1d5e1632bf70c68fd57b\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\230d8b86a1bd1d5e1632bf70c68fd57b\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\469f0fd179742e92b17080ea4bc943f0\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\469f0fd179742e92b17080ea4bc943f0\AndroidManifest.xml:21:5-23:58
+INJECTED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:7:5-9:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\525a61ada8087b52b38906ee9ff56291\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:9:9-38
 		INJECTED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml
@@ -37,13 +76,10 @@ ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:11:5-6
 		ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:11:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:12:5-79
-MERGED from [cn.finalteam:toolsfinal:1.1.5] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\toolsfinal\1.1.5\AndroidManifest.xml:24:5-79
 	android:name
 		ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:12:22-76
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
 ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:13:5-81
-MERGED from [cn.finalteam:galleryfinal:1.4.8.7] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\galleryfinal\1.4.8.7\AndroidManifest.xml:14:5-81
-MERGED from [cn.finalteam:toolsfinal:1.1.5] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\toolsfinal\1.1.5\AndroidManifest.xml:14:5-81
 	android:name
 		ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:13:22-78
 uses-feature#android.hardware.camera
@@ -60,45 +96,50 @@ ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:17:5-6
 		ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:17:22-62
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:19:5-80
-MERGED from [cn.finalteam:galleryfinal:1.4.8.7] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\galleryfinal\1.4.8.7\AndroidManifest.xml:16:5-80
-MERGED from [cn.finalteam:toolsfinal:1.1.5] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\toolsfinal\1.1.5\AndroidManifest.xml:16:5-80
 	android:name
 		ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:19:22-77
 uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
 ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:20:5-84
-MERGED from [cn.finalteam:galleryfinal:1.4.8.7] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\galleryfinal\1.4.8.7\AndroidManifest.xml:12:5-84
-MERGED from [cn.finalteam:toolsfinal:1.1.5] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\toolsfinal\1.1.5\AndroidManifest.xml:12:5-84
 	android:name
 		ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:20:22-81
 application
 ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:22:5-44:19
-MERGED from [com.android.support:appcompat-v7:23.1.1] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.1.1] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [cn.finalteam:galleryfinal:1.4.8.7] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\galleryfinal\1.4.8.7\AndroidManifest.xml:18:5-34:19
-MERGED from [com.android.support:support-v4:23.1.1] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-v4:23.1.1] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\525a61ada8087b52b38906ee9ff56291\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\525a61ada8087b52b38906ee9ff56291\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\4418bd7c5832f10ed6958f64cd667503\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\4418bd7c5832f10ed6958f64cd667503\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\1922ef2d92127aa52b2c8c94967b0741\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\1922ef2d92127aa52b2c8c94967b0741\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\6c85c995eebaef533e01590c9b3eadbc\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\6c85c995eebaef533e01590c9b3eadbc\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\bd1b0f3e3aa94c3d545ec538f920d68f\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\bd1b0f3e3aa94c3d545ec538f920d68f\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\3d1c8ba6419b50cfd5cec420c02f4932\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\3d1c8ba6419b50cfd5cec420c02f4932\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\4e296a042914e4bb5246c1e99e565d2e\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\4e296a042914e4bb5246c1e99e565d2e\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\230d8b86a1bd1d5e1632bf70c68fd57b\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\230d8b86a1bd1d5e1632bf70c68fd57b\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\469f0fd179742e92b17080ea4bc943f0\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\469f0fd179742e92b17080ea4bc943f0\AndroidManifest.xml:29:5-20
 	android:label
 		ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:26:9-41
-	android:supportsRtl
-		ADDED from [cn.finalteam:galleryfinal:1.4.8.7] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\galleryfinal\1.4.8.7\AndroidManifest.xml:21:9-35
-	android:allowBackup
-		ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:24:9-35
 	android:icon
 		ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:25:9-47
-	android:largeHeap
-		ADDED from [cn.finalteam:galleryfinal:1.4.8.7] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\galleryfinal\1.4.8.7\AndroidManifest.xml:20:9-33
+	android:allowBackup
+		ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:24:9-35
 	android:theme
 		ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:27:9-62
 	android:name
 		ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:23:9-56
-activity#com.xsy.photo.activity.UploadImgActivity
+activity#com.xsy.photo.MainActivity
 ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:28:9-37:20
 	android:label
 		ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:31:13-45
 	android:hardwareAccelerated
 		ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:30:13-47
 	android:name
-		ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:29:13-68
+		ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:29:13-54
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
 ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:32:13-36:29
 action#android.intent.action.MAIN
@@ -125,43 +166,27 @@ ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:42:9-4
 		ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:43:19-55
 	android:name
 		ADDED from F:\AndroidOpenLibrary\MyPhoto\app\src\main\AndroidManifest.xml:42:19-64
-activity#cn.finalteam.galleryfinal.PhotoSelectActivity
-ADDED from [cn.finalteam:galleryfinal:1.4.8.7] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\galleryfinal\1.4.8.7\AndroidManifest.xml:22:9-25:52
-	android:screenOrientation
-		ADDED from [cn.finalteam:galleryfinal:1.4.8.7] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\galleryfinal\1.4.8.7\AndroidManifest.xml:25:13-49
-	android:configChanges
-		ADDED from [cn.finalteam:galleryfinal:1.4.8.7] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\galleryfinal\1.4.8.7\AndroidManifest.xml:24:13-83
+meta-data#android.support.VERSION
+ADDED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\a92df9b2c91af90863f02231444e41b0\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\525a61ada8087b52b38906ee9ff56291\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-alpha1.aar\525a61ada8087b52b38906ee9ff56291\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\4418bd7c5832f10ed6958f64cd667503\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-alpha1.aar\4418bd7c5832f10ed6958f64cd667503\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\1922ef2d92127aa52b2c8c94967b0741\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-alpha1.aar\1922ef2d92127aa52b2c8c94967b0741\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\6c85c995eebaef533e01590c9b3eadbc\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-alpha1.aar\6c85c995eebaef533e01590c9b3eadbc\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\bd1b0f3e3aa94c3d545ec538f920d68f\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-alpha1.aar\bd1b0f3e3aa94c3d545ec538f920d68f\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\3d1c8ba6419b50cfd5cec420c02f4932\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-alpha1.aar\3d1c8ba6419b50cfd5cec420c02f4932\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\4e296a042914e4bb5246c1e99e565d2e\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-alpha1.aar\4e296a042914e4bb5246c1e99e565d2e\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\230d8b86a1bd1d5e1632bf70c68fd57b\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-alpha1.aar\230d8b86a1bd1d5e1632bf70c68fd57b\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\469f0fd179742e92b17080ea4bc943f0\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-alpha1.aar\469f0fd179742e92b17080ea4bc943f0\AndroidManifest.xml:25:5-27:41
+	android:value
+		ADDED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\a92df9b2c91af90863f02231444e41b0\AndroidManifest.xml:24:9-38
 	android:name
-		ADDED from [cn.finalteam:galleryfinal:1.4.8.7] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\galleryfinal\1.4.8.7\AndroidManifest.xml:23:13-73
-activity#cn.finalteam.galleryfinal.PhotoEditActivity
-ADDED from [cn.finalteam:galleryfinal:1.4.8.7] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\galleryfinal\1.4.8.7\AndroidManifest.xml:26:9-29:52
-	android:screenOrientation
-		ADDED from [cn.finalteam:galleryfinal:1.4.8.7] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\galleryfinal\1.4.8.7\AndroidManifest.xml:29:13-49
-	android:configChanges
-		ADDED from [cn.finalteam:galleryfinal:1.4.8.7] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\galleryfinal\1.4.8.7\AndroidManifest.xml:28:13-83
-	android:name
-		ADDED from [cn.finalteam:galleryfinal:1.4.8.7] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\galleryfinal\1.4.8.7\AndroidManifest.xml:27:13-71
-activity#cn.finalteam.galleryfinal.PhotoPreviewActivity
-ADDED from [cn.finalteam:galleryfinal:1.4.8.7] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\galleryfinal\1.4.8.7\AndroidManifest.xml:30:9-33:52
-	android:screenOrientation
-		ADDED from [cn.finalteam:galleryfinal:1.4.8.7] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\galleryfinal\1.4.8.7\AndroidManifest.xml:33:13-49
-	android:configChanges
-		ADDED from [cn.finalteam:galleryfinal:1.4.8.7] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\galleryfinal\1.4.8.7\AndroidManifest.xml:32:13-83
-	android:name
-		ADDED from [cn.finalteam:galleryfinal:1.4.8.7] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\galleryfinal\1.4.8.7\AndroidManifest.xml:31:13-74
-uses-permission#android.permission.READ_PHONE_STATE
-ADDED from [cn.finalteam:toolsfinal:1.1.5] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\toolsfinal\1.1.5\AndroidManifest.xml:18:5-75
-	android:name
-		ADDED from [cn.finalteam:toolsfinal:1.1.5] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\toolsfinal\1.1.5\AndroidManifest.xml:18:22-72
-uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from [cn.finalteam:toolsfinal:1.1.5] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\toolsfinal\1.1.5\AndroidManifest.xml:20:5-76
-	android:name
-		ADDED from [cn.finalteam:toolsfinal:1.1.5] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\toolsfinal\1.1.5\AndroidManifest.xml:20:22-73
-uses-permission#android.permission.GET_TASKS
-ADDED from [cn.finalteam:toolsfinal:1.1.5] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\toolsfinal\1.1.5\AndroidManifest.xml:22:5-68
-	android:name
-		ADDED from [cn.finalteam:toolsfinal:1.1.5] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\toolsfinal\1.1.5\AndroidManifest.xml:22:22-65
-uses-permission#android.permission.CALL_PHONE
-ADDED from [cn.finalteam:toolsfinal:1.1.5] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\toolsfinal\1.1.5\AndroidManifest.xml:26:5-69
-	android:name
-		ADDED from [cn.finalteam:toolsfinal:1.1.5] F:\AndroidOpenLibrary\MyPhoto\app\build\intermediates\exploded-aar\cn.finalteam\toolsfinal\1.1.5\AndroidManifest.xml:26:22-66
+		ADDED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\xsy\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-alpha1.aar\a92df9b2c91af90863f02231444e41b0\AndroidManifest.xml:23:9-47

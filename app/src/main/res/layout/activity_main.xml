@@ -1,43 +1,53 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/white"
     >
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="45dp"
-    android:background="#0ac39e">
 
-    <ImageView
-        android:id="@+id/iv_go_back"
-        android:layout_width="45dp"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:src="@drawable/arrows_right"
-        android:scaleType="fitXY"/>
-    <TextView
-        android:id="@+id/tv_upload"
-        android:layout_width="45dp"
-        android:layout_height="match_parent"
-        android:layout_alignParentRight="true"
-        android:gravity="center"
-        android:textColor="#FFFFFF"
-        android:textSize="16sp"
-        android:text="上传"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#0ac39e">
 
-</RelativeLayout>
+        <ImageView
+            android:id="@+id/iv_go_back"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/back_02"/>
+
+        <TextView
+            android:id="@+id/tv_upload"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="上传"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
     <GridView
         android:id="@+id/gridView1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="5dp"
         android:gravity="center"
         android:horizontalSpacing="5dp"
-        android:verticalSpacing="5dp"
         android:listSelector="@android:color/transparent"
         android:numColumns="3"
-        android:stretchMode="columnWidth" >
-    </GridView>
+        android:padding="5dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp"
+        android:visibility="gone"/>
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/mRecyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
 
 </LinearLayout>

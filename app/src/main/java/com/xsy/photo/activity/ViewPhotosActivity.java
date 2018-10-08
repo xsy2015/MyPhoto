@@ -35,6 +35,7 @@ public class ViewPhotosActivity extends Activity implements ViewPager.OnPageChan
 
         Intent intent = getIntent();
         mUrList = intent.getStringArrayListExtra("mUrList");
+        mUrList.remove(null);
         index = intent.getIntExtra("index", 0);
         mViewType = intent.getIntExtra("viewType", 0);
 
@@ -63,7 +64,6 @@ public class ViewPhotosActivity extends Activity implements ViewPager.OnPageChan
 
     @Override
     public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
     }
 
     @Override
