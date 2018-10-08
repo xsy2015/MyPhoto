@@ -32,22 +32,9 @@
 
     </RelativeLayout>
 
-    <GridView
-        android:id="@+id/gridView1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:horizontalSpacing="5dp"
-        android:listSelector="@android:color/transparent"
-        android:numColumns="3"
-        android:padding="5dp"
-        android:stretchMode="columnWidth"
-        android:verticalSpacing="5dp"
-        android:visibility="gone"/>
 <android.support.v7.widget.RecyclerView
     android:id="@+id/mRecyclerView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"/>
-
 
 </LinearLayout>
